@@ -23,7 +23,7 @@ resource "aws_autoscaling_group" "realtechie-autoscaling" {
   vpc_zone_identifier       = [aws_subnet.realtechiePri-Sub1.id, aws_subnet.realtechiePri-Sub2.id]
   launch_configuration      = aws_launch_configuration.realtechie-launchconfig.name
   min_size                  = 2
-  max_size                  = 5
+  max_size                  = 2
   health_check_grace_period = 200
   health_check_type         = "ELB"
   load_balancers            = [aws_elb.realtechie-elb.name]

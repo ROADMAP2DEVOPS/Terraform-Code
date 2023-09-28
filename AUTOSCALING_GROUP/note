@@ -1,0 +1,4 @@
+#install stress
+#sudo -id#apt-get update
+#apt-get install stress
+#stress --cpu 2 --timeout 300
