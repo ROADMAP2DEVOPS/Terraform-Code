@@ -21,7 +21,7 @@ resource "aws_db_parameter_group" "realtechie-mariadb-parameters" {
 resource "aws_db_instance" "realtechie-mariadb" {
   allocated_storage       = 20                                                               # 20 GB of storage
   engine                  = "mariadb"
-  engine_version          = "10.4.8"
+  engine_version          = "10.6.14"
   instance_class          = "db.t2.micro"                                                    # use micro if you want to use the free tier
   identifier              = "mariadb"
   username                = "root"                                                           # username
