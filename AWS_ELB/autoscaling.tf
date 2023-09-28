@@ -20,7 +20,7 @@ resource "aws_key_pair" "realtechie_key" {
 #Autoscaling Group
 resource "aws_autoscaling_group" "realtechie-autoscaling" {
   name                      = "realtechie-autoscaling"
-  vpc_zone_identifier       = [aws_subnet.realtechiePri-Sub1.id, aws_subnet.realtechiePri-Sub2.id]
+  vpc_zone_identifier       = [aws_subnet.realtechiePub-Sub1.id, aws_subnet.realtechiePub-Sub2.id]
   launch_configuration      = aws_launch_configuration.realtechie-launchconfig.name
   min_size                  = 2
   max_size                  = 2
