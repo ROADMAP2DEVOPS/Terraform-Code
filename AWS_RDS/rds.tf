@@ -8,7 +8,7 @@ resource "aws_db_subnet_group" "mariadb-subnets" {
 #RDS Parameters
 resource "aws_db_parameter_group" "realtechie-mariadb-parameters" {
   name        = "realtechie-mariadb-parameters"
-  family      = "mariadb10.4"
+  family      = "mariadb10.6"
   description = "MariaDB parameter group"
 
   parameter {
