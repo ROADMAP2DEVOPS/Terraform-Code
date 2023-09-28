@@ -12,7 +12,7 @@ resource "aws_instance" "MyFirstInstnace" {
   subnet_id = aws_subnet.realtechiePub-Sub1.id
 
   tags = {
-    Name = "MyFirstInstnace
+    Name = "MyFirstInstnace"
   }
 
 }
