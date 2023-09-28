@@ -7,7 +7,7 @@ resource "aws_key_pair" "realtechie_key" {
 resource "aws_instance" "MyFirstInstnace" {
   ami           = lookup(var.AMIS, var.AWS_REGION)
   instance_type = "t2.micro"
-  availability_zone = "us-east-2a"
+  availability_zone = "us-east-1a"
   key_name      = aws_key_pair.realtechie_key.key_name
   vpc_security_group_ids = [aws_security_group.realtechie-sg.id]
   subnet_id = aws_subnet.realtechiePub-Sub1.id
