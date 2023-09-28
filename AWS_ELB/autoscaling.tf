@@ -1,5 +1,5 @@
 #AutoScaling Launch Configuration
-resource "aws_launch_configuration" "levelup-launchconfig" {
+resource "aws_launch_configuration" "realtechie-launchconfig" {
   name_prefix     = "realtechie-launchconfig"
   image_id        = lookup(var.AMIS, var.AWS_REGION)
   instance_type   = "t2.micro"
