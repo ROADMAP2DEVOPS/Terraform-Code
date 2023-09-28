@@ -31,7 +31,7 @@ resource "aws_autoscaling_group" "realtechie-autoscaling" {
 }
 
 #Autoscaling Configuration policy - Scaling Alarm
-resource "aws_autoscaling_policy" "levelup-cpu-policy" {
+resource "aws_autoscaling_policy" "realtechie-cpu-policy" {
   name                   = "realtechie-cpu-policy"
   autoscaling_group_name = aws_autoscaling_group.realtechie-autoscaling.name
   adjustment_type        = "ChangeInCapacity"
