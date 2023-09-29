@@ -7,7 +7,7 @@ resource "aws_vpc" "realtechie" {
   #enable_classiclink           = "false"
 
   tags = {
-    Name                        = "${var.project_name}-vpc"
+    Name                        = "${var.project_name}-project"
     environment                 = var.environment
   }
 }
