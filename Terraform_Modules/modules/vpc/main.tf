@@ -1,13 +1,14 @@
 #Create AWS VPC
 resource "aws_vpc" "realtechie" {
   cidr_block                    = var.vpc_cidr
-  instance_tenancy              = "default"
-  enable_dns_support            = "true"
-  enable_dns_hostnames          = "true"
+  instance_tenancy              = var.instance_tenancy
+  enable_dns_support            = var.enable_dns_support
+  enable_dns_hostnames          = var.enable_dns_hostnames
   #enable_classiclink           = "false"
 
   tags = {
-    Name =                      "${var.project_name}-vpc"
+    Name                        = "${var.project_name}-vpc"
+    environment                 = var.vpc_environment
   }
 }
 
