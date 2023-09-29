@@ -2,7 +2,7 @@ vpc_cidr                    = "10.0.0.0/16"
 
 environment                 = "dev"
 
-project_name                = "Walmart"
+project_name                = "Realtechie"
 
 AWS_REGION                  = "us-east-1"
 
