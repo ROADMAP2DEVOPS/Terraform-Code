@@ -8,7 +8,7 @@ resource "aws_vpc" "realtechie" {
 
   tags = {
     Name                        = "${var.project_name}-vpc"
-    environment                 = var.vpc_environment
+    environment                 = var.environment
   }
 }
 
