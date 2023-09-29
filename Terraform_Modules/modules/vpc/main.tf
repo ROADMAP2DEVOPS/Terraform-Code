@@ -21,7 +21,6 @@ resource "aws_subnet" "realtechiePub-Sub1" {
   cidr_block                    = var.realtechiePub-Sub1_cidr
   map_public_ip_on_launch       = "true"
   availability_zone             = data.aws_availability_zones.available_zones.names[0]
-  map_public_ip_on_launch       = true
 
   tags = {
     Name                        = "realtechiePub-Sub1"
@@ -121,7 +120,7 @@ resource "aws_route_table_association" "public_subnet_az2_route_table_associatio
 }
 
 # associate public subnet az2 to "public route table"
-resource "aws_route_table_association" "public_subnet_az2_route_table_association" {
+resource "aws_route_table_association" "public_subnet_az3_route_table_association" {
   subnet_id           = aws_subnet.realtechiePub-Sub3.id
   route_table_id      = aws_route_table.public_route_table.id
 }
