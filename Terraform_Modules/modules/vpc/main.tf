@@ -40,7 +40,7 @@ resource "aws_subnet" "realtechiePub-Sub2" {
 
 resource "aws_subnet" "realtechiePub-Sub3" {
   vpc_id                         = aws_vpc.realtechie.id
-  cidr_block                     = var.realtechiePub-Sub2_cidr
+  cidr_block                     = var.realtechiePub-Sub3_cidr
   map_public_ip_on_launch        = "true"
   availability_zone              = data.aws_availability_zones.available_zones.names[2]
 
