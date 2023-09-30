@@ -19,3 +19,35 @@ variable "PATH_TO_PUBLIC_KEY" {
 variable "INSTANCE_USERNAME" {
   default = "ec2-user"
 }
+
+variable "AWS_ACCESS_KEY" {
+    type = string
+    default = ""
+}
+
+variable "AWS_SECRET_KEY" {
+  type = string
+  default = ""
+}
+
+variable "instance_tenancy" {
+  description = "A tenancy option for instances launched into the VPC"
+  type        = string
+  default     = "default"
+}
+
+variable "environment" {
+  description = "AWS VPC Environment Name"
+  type        = string
+  default     = ""
+}
+
+variable "project_name" {
+  type = string
+  default = ""
+}
+
+
+variable "AWS_REGION" {
+default = "us-east-1"
+}
