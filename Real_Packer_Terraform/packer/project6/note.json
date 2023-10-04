@@ -1,0 +1,17 @@
+{
+ "variables": {
+        "description":          "",
+        "jasybaby":             ""
+    }
+
+}
+
+
+
+NOTE: TO RUN THE VARIABLE ON THE COMMAND LINE
+
+TO RUN: packer build -var "description=anyvalue_name" example.json
+Note: on windows its "..." while on linux its '....'
+
+
+WE CAN ADD MULTIPLE VARIABLES WITH ,

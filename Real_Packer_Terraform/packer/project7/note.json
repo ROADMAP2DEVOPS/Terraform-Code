@@ -1,0 +1,15 @@
+TO SET ENV VARIABLES IN WINDOWS
+
+    setx ACCESS_KEY <Value_of access_key>
+    setx SECRET_KEY <Value_of_secret_key>
+
+
+
+TO SET ENV VARIABLE FOR LINUX
+    exporrt ACCESS_KEY=<Value_of_access_key>
+    exporrt SECRET_KEY=<Value_of_secret_key>
+
+TO VERIFY
+
+    printenv | grep -i ACCESS-KEY
+
